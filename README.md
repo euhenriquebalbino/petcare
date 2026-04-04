@@ -60,9 +60,9 @@ Este projeto utiliza os principais pilares da Programação Orientada a Objetos:
 ## 👥 Integrantes do grupo
 
 - [Henrique de Paula Balbino](https://github.com/euhenriquebalbino)
-- [Lorenzo Silote Barbosa Barros](https://github.com/luanaraujo2)
-- [Luan Araujo de Oliveira](https://github.com/PedroComper)
-- [Pedro Lucas Oliveira Comper](https://github.com/silotelz)
+- [Lorenzo Silote Barbosa Barros](https://github.com/silotelz)
+- [Luan Araujo de Oliveira](https://github.com/luanaraujo2)
+- [Pedro Lucas Oliveira Comper](https://github.com/PedroComper)
 
 ## ⚠️ Observações
 
