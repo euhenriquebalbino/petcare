@@ -48,5 +48,7 @@ public class Animal {
                 "Tutor: " + (t1 != null ? t1.getNome() : "Não cadastrado");
         
         JOptionPane.showMessageDialog(null, mensagem);
+        
+        //JOptionPane.showMessageDialog(null, mensagem);
     }
 }
