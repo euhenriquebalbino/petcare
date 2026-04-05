@@ -1,3 +1,4 @@
+//trabalho realizado por: Lorenzo Silote
 package com.petcare.auditoria;
 
 import com.petcare.usuario.Usuario;

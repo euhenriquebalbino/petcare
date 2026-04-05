@@ -1,3 +1,4 @@
+//trabalho realizado por: Pedro Comper
 package com.petcare.financeiro;
 
 import com.petcare.usuario.Tutor;

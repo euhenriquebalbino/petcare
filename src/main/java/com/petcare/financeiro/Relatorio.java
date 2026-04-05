@@ -1,3 +1,4 @@
+//trabalho realizado por: Pedro Comper
 package com.petcare.financeiro;
 
 import javax.swing.JOptionPane;

@@ -1,3 +1,4 @@
+//trabalho realizado por: Henrique Balbinos
 package com.petcare.usuario;
 
 import com.petcare.animal.Animal;

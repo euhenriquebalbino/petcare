@@ -1,3 +1,4 @@
+//trabalho realizado por: Pedro Comper
 package com.petcare.estoque;
 
 import com.petcare.agendamento.Agendamento;
