@@ -1,13 +1,19 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.petcare.animal;
+import javax.swing.JOptionPane;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
-/**
- *
- * @author Luan Araujo
- */
 public class Vacina {
+    private String nomeVacina;
+    private String dataAplicacao;
+    private String dataReforco;
+    private String lote;
+    private String fabricante;
     
+    
+    
+    //Vacina(id,data,desc,vet,nomeVacina) + 
+    //getNomeVacina() : String + getDataReforco() : String + 
+    //setDataReforco(dt) : void + precisaReforco() : boolean + 
+    //getLote() : String + exibir() : void {override}
 }
