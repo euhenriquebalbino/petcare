@@ -1,14 +1,15 @@
 package com.petcare.usuario;
 
 import javax.swing.JOptionPane;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 
-public class Usuario {
+public abstract class Usuario {
+
   private int id;
-  private String nome, email, senha, perfil;
+  private String nome;
+  private String email;
+  private String senha;
+  private String perfil;
   private boolean ativo;
-  private String dataCadastro;
 
   public Usuario(int id, String nome, String email, String senha, String perfil) {
     this.id = id;
@@ -16,46 +17,47 @@ public class Usuario {
     this.email = email;
     this.senha = senha;
     this.perfil = perfil;
-    this.dataCadastro = LocalDate.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+    this.ativo = true;
   }
 
-  public boolean login(String email, String senha) {
-    if (this.email.equals(email) && this.senha.equals(senha) && this.ativo) {
-      return true;
-    }
-    return false;
-  }
-
-  public void logout() {
-    JOptionPane.showMessageDialog(null, "Usuário " + this.nome + " efetuou logout.");
+  public int getId() {
+    return id;
   }
 
   public String getNome() {
     return nome;
   }
 
-  public String getEmail() {
-    return email;
-  }
-
-  public String getPerfil() {
-    return perfil;
-  }
-
   public void setNome(String nome) {
     this.nome = nome;
+  }
+
+  public String getEmail() {
+    return email;
   }
 
   public void setEmail(String email) {
     this.email = email;
   }
 
+  public String getSenha() {
+    return senha;
+  }
+
   public void setSenha(String senha) {
     this.senha = senha;
   }
 
+  public String getPerfil() {
+    return perfil;
+  }
+
   public boolean isAtivo() {
     return ativo;
+  }
+
+  public void ativar() {
+    this.ativo = true;
   }
 
   public void desativar() {
@@ -63,13 +65,15 @@ public class Usuario {
   }
 
   public void exibir() {
-    JOptionPane.showMessageDialog(null,
-      "Dados do Usuário:" 
-      + "\nID: " + this.id 
-      + "\nNome: " + this.nome 
-      + "\nEmail: " + this.email 
-      + "\nPerfil: " + this.perfil 
-      + "\nStatus: " + (this.ativo ? "Ativo" : "Inativo") 
-      + "\nData de Cadastro: " + this.dataCadastro);
+    String status = this.ativo ? "Ativo" : "Inativo";
+
+    String mensagem = "--- DADOS BÁSICOS DO USUÁRIO ---\n"
+        + "ID: " + this.id + "\n"
+        + "Nome: " + this.nome + "\n"
+        + "E-mail: " + this.email + "\n"
+        + "Perfil: " + this.perfil + "\n"
+        + "Status: " + status;
+
+    JOptionPane.showMessageDialog(null, mensagem, "Informações de Conta", JOptionPane.INFORMATION_MESSAGE);
   }
 }
