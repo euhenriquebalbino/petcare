@@ -156,7 +156,7 @@ public class Estoque {
   }
 
   public void exibir() {
-    String mensagem = "=== GESTÃO DE ESTOQUE ===\n"
+    String mensagem = "GESTÃO DE ESTOQUE:\n"
         + "Total de Itens Cadastrados: " + this.itens.size() + "\n"
         + "Itens Controlados: " + listarControlados().size() + "\n"
         + "Sistema de Notificação: " + (this.notificador != null ? "Ativo" : "Inativo");
