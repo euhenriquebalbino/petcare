@@ -44,7 +44,7 @@ public class Consulta extends RegistroClinico {
   public void exibir() {
     super.exibir();
 
-    String mensagem = "=== DADOS DA CONSULTA ===\n"
+    String mensagem = "DADOS DA CONSULTA:\n"
         + "Motivo: " + this.motivo + "\n"
         + "Prescrição: " + (this.prescricao != null ? this.prescricao : "Nenhuma") + "\n"
         + "Data de Retorno: " + (this.dataRetorno != null ? this.dataRetorno : "Não agendado");
