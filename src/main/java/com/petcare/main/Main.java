@@ -26,7 +26,7 @@ public class Main {
             if (selecao == 2 || selecao == -1) break;
 
             switch (selecao) {
-                case 0: // Agendar
+                case 0:
                     String nomeTutor = JOptionPane.showInputDialog("Nome do Tutor:");
                     if (nomeTutor == null) break;
                     Tutor tutor = new Tutor(1, nomeTutor, "email@pet.com", "123", "000.000.000-00", "9999-9999", "Rua A");
@@ -35,8 +35,6 @@ public class Main {
                     if (nomePet == null) break;
                     Animal pet = new Animal(1, nomePet, "Cão", "SRD", tutor);
 
-                    // --- SELETOR DE DATA E HORA CUSTOMIZADO ---
-                    // Criamos um Spinner configurado para data e hora
                     SpinnerDateModel model = new SpinnerDateModel(new Date(), null, null, Calendar.HOUR_OF_DAY);
                     JSpinner spinner = new JSpinner(model);
                     JSpinner.DateEditor editor = new JSpinner.DateEditor(spinner, "dd/MM/yyyy HH:mm");
@@ -64,7 +62,7 @@ public class Main {
                     }
                     break;
 
-                case 1: // Ver Agendamentos
+                case 1:
                     if (listaAgendamentos.isEmpty()) {
                         JOptionPane.showMessageDialog(null, "Nenhum agendamento.");
                     } else {
