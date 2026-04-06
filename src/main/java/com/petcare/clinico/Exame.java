@@ -61,7 +61,7 @@ public class Exame extends RegistroClinico {
   public void exibir() {
     super.exibir();
 
-    String mensagem = "=== DADOS DO EXAME ===\n"
+    String mensagem = "DADOS DO EXAME\n"
         + "Tipo: " + this.tipo + "\n"
         + "Laboratório: " + (this.laboratorio != null ? this.laboratorio : "Não definido") + "\n"
         + "Resultado: " + (this.resultado != null ? this.resultado : "Pendente") + "\n"
