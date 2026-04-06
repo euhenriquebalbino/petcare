@@ -64,7 +64,7 @@ public class Recepcionista extends Usuario {
   public void exibir() {
     super.exibir();
 
-    String mensagem = "=== DADOS DA RECEPCIONISTA ===\n"
+    String mensagem = "DADOS DA RECEPCIONISTA:\n"
         + "Ramal: " + this.ramal + "\n"
         + "Turno: " + this.turno;
 
