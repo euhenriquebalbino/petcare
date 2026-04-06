@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
 public class Agendamento {
 
   private int id;
-  private String dataHora; // Formato esperado: "dd/MM/yyyy HH:mm"
+  private String dataHora;
   private String tipo;
   private String status;
   private Animal animal;
@@ -33,11 +33,9 @@ public class Agendamento {
   }
 
   public boolean validarHorario() {
-    // RN04: Validar se o horário está entre 08h e 18h
-    // Assumindo formato "dd/MM/yyyy HH:mm", separamos pelo espaço e pegamos a hora
     if (this.dataHora != null && this.dataHora.contains(" ") && this.dataHora.contains(":")) {
-      String[] partes = this.dataHora.split(" "); // ["dd/MM/yyyy", "HH:mm"]
-      String[] tempo = partes[1].split(":"); // ["HH", "mm"]
+      String[] partes = this.dataHora.split(" ");
+      String[] tempo = partes[1].split(":");
 
       int hora = Integer.parseInt(tempo[0]);
 
@@ -51,7 +49,6 @@ public class Agendamento {
   }
 
   public boolean validarVeterinario() {
-    // RN03: Verifica se o veterinário está disponível
     if (this.veterinario != null && this.veterinario.isDisponivel()) {
       return true;
     }
@@ -72,7 +69,7 @@ public class Agendamento {
     if (validarHorario() && validarVeterinario()) {
       this.status = "AGENDADO";
       this.historico.add("Status alterado para AGENDADO");
-      notificarTutor(); // Delegação do aviso
+      notificarTutor();
       return true;
     }
     this.status = "CANCELADO";
@@ -99,8 +96,6 @@ public class Agendamento {
   }
 
   public void notificarTutor() {
-    // Delegação: a classe Agendamento não sabe enviar e-mail, ela manda o
-    // Notificador fazer isso.
     if (this.notificador != null) {
       this.notificador.enviarConfirmacao(this);
     }
