@@ -121,7 +121,7 @@ public class Agendamento {
     String nomeVet = (this.veterinario != null) ? this.veterinario.getNome() : "Não definido";
     String nomeAnimal = (this.animal != null) ? this.animal.getNome() : "Não definido";
 
-    String mensagem = "=== AGENDAMENTO ===\n"
+    String mensagem = "AGENDAMENTO:\n"
         + "Data/Hora: " + this.dataHora + "\n"
         + "Tipo: " + this.tipo + "\n"
         + "Status: " + this.status + "\n"
