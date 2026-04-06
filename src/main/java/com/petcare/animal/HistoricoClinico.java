@@ -114,7 +114,7 @@ public class HistoricoClinico {
 
   public void exibir() {
     String status = this.finalizado ? "Finalizado" : "Em Aberto";
-    String mensagem = "=== HISTÓRICO CLÍNICO ===\n"
+    String mensagem = "HISTÓRICO CLÍNICO:\n"
         + "ID Animal: " + this.idAnimal + "\n"
         + "Status: " + status + "\n"
         + "Consultas: " + this.consultas.size() + "\n"
