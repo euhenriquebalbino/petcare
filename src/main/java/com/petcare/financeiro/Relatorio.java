@@ -58,7 +58,7 @@ public class Relatorio {
   }
 
   public void exibir() {
-    String mensagem = "=== RELATÓRIO MENSAL: " + String.format("%02d", this.mes) + "/" + this.ano + " ===\n"
+    String mensagem = "RELATÓRIO MENSAL: " + String.format("%02d", this.mes) + "/" + this.ano + " ===\n"
         + "Total de Atendimentos: " + this.totalAtendimentos + "\n"
         + "Procedimento Mais Realizado: " + this.procedMaisRealizado + "\n"
         + "Tempo Médio de Atendimento: " + this.tempMedioAtend + " min\n"
