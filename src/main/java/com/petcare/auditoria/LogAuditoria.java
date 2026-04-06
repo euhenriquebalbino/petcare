@@ -62,7 +62,7 @@ public class LogAuditoria {
   public void exibir() {
     String nomeUsuario = (this.usuario != null) ? this.usuario.getNome() : "Desconhecido";
 
-    String mensagem = "=== LOG DE AUDITORIA ===\n"
+    String mensagem = "LOG DE AUDITORIA\n"
         + "Data/Hora: " + this.dataHora + "\n"
         + "Usuário: " + nomeUsuario + "\n"
         + "Ação: " + this.acao + "\n"
