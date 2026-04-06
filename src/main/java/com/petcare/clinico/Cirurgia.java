@@ -46,7 +46,7 @@ public class Cirurgia extends RegistroClinico {
     public void exibir() {
         super.exibir();
 
-        String mensagem = "=== DADOS DA CIRURGIA ===\n"
+        String mensagem = "DADOS DA CIRURGIA:\n"
                 + "Sala: " + this.sala + "\n"
                 + "Duração: " + this.duracao + " min\n"
                 + "Tamanho da Equipe: " + this.equipe.size() + "\n"
