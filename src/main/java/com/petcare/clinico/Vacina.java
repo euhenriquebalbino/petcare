@@ -77,7 +77,7 @@ public class Vacina extends RegistroClinico {
 
         String statusReforco = precisaReforco() ? "SIM (Atrasada ou Vencendo hoje)" : "NÃO";
 
-        String mensagem = "=== DADOS DA VACINA ===\n"
+        String mensagem = "DADOS DA VACINA:\n"
                 + "Nome da Vacina: " + this.nomeVacina + "\n"
                 + "Fabricante: " + (this.fabricante != null ? this.fabricante : "Não informado") + "\n"
                 + "Lote: " + (this.lote != null ? this.lote : "Não informado") + "\n"
