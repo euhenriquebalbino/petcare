@@ -68,7 +68,7 @@ public abstract class Usuario {
   public void exibir() {
     String status = this.ativo ? "Ativo" : "Inativo";
 
-    String mensagem = "--- DADOS BÁSICOS DO USUÁRIO ---\n"
+    String mensagem = "DADOS BÁSICOS DO USUÁRIO:\n"
         + "ID: " + this.id + "\n"
         + "Nome: " + this.nome + "\n"
         + "E-mail: " + this.email + "\n"
