@@ -69,7 +69,7 @@ public abstract class RegistroClinico {
     String nomeVet = (this.veterinario != null) ? this.veterinario.getNome() : "Não informado";
     String laudo = (this.laudoAnexo != null) ? this.laudoAnexo : "Nenhum";
 
-    String mensagem = "=== REGISTRO CLÍNICO ===\n"
+    String mensagem = "REGISTRO CLÍNICO\n"
         + "ID: " + this.id + "\n"
         + "Data: " + this.data + "\n"
         + "Descrição: " + this.descricao + "\n"
