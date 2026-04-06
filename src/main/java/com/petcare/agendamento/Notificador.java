@@ -10,7 +10,7 @@ import java.util.List;
 
 public class Notificador {
 
-  private String canal; // EMAIL | SMS | APP
+  private String canal;
   private String destinatario;
   private boolean ativo;
 
