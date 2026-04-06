@@ -108,7 +108,7 @@ public class ItemEstoque {
     String statusVencimento = isVencido() ? "VENCIDO" : "No Prazo";
     String statusEstoque = isAbaixoMinimo() ? "ABAIXO DO MÍNIMO" : "Normal";
 
-    String mensagem = "=== DADOS DO ITEM DE ESTOQUE ===\n"
+    String mensagem = "DADOS DO ITEM DE ESTOQUE\n"
         + "ID: " + this.id + "\n"
         + "Nome: " + this.nome + "\n"
         + "Categoria: " + (this.categoria != null ? this.categoria : "Não definida") + "\n"
