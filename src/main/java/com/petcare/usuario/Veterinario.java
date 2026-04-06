@@ -52,7 +52,7 @@ public class Veterinario extends Usuario {
 
     String status = this.disponivel ? "Disponível" : "Indisponível";
 
-    String mensagem = "=== DADOS DO VETERINÁRIO ===\n"
+    String mensagem = "DADOS DO VETERINÁRIO:\n"
         + "CRMV: " + this.crmv + "\n"
         + "Especialidade: " + this.especialidade + "\n"
         + "Status Atual: " + status;
