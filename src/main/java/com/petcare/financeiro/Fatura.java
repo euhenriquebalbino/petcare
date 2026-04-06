@@ -74,7 +74,7 @@ public class Fatura {
   public void exibir() {
     String nomeTutor = (this.tutor != null) ? this.tutor.getNome() : "Não identificado";
 
-    String mensagem = "=== DADOS DA FATURA ===\n"
+    String mensagem = "DADOS DA FATURA:\n"
         + "ID: " + this.id + "\n"
         + "Tutor: " + nomeTutor + "\n"
         + "Serviço: " + this.descricaoServico + "\n"
