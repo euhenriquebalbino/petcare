@@ -61,7 +61,7 @@ public class Administrador extends Usuario {
   public void exibir() {
     super.exibir();
 
-    String mensagem = "=== DADOS DO ADMINISTRADOR ===\n"
+    String mensagem = "DADOS DO ADMINISTRADOR:\n"
         + "Nível de Acesso: " + this.nivelAcesso + "\n"
         + "Departamento: " + this.departamento;
 
