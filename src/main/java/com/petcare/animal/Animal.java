@@ -69,7 +69,7 @@ public class Animal {
     String idade = (calcularIdade() > 0) ? calcularIdade() + " ano(s)" : "Menos de 1 ano / Não informada";
     String nomeTutor = (this.tutor != null) ? this.tutor.getNome() : "Sem tutor";
 
-    String mensagem = "=== ANIMAL ===\n"
+    String mensagem = "ANIMAL:\n"
         + "ID: " + this.id + "\n"
         + "Nome: " + this.nome + "\n"
         + "Espécie/Raça: " + this.especie + " - " + this.raca + "\n"
