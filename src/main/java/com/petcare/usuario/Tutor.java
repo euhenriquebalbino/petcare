@@ -74,7 +74,7 @@ public class Tutor extends Usuario {
   public void exibir() {
     super.exibir();
 
-    String mensagem = "=== DADOS DO TUTOR ===\n"
+    String mensagem = "DADOS DO TUTOR:\n"
         + "Nome: " + this.getNome() + "\n"
         + "CPF: " + this.cpf + "\n"
         + "Telefone: " + this.telefone + "\n"
